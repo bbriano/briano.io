@@ -1,18 +1,47 @@
+:root {
+  --black: #282c35;
+  --red: #ec5e66;
+  --green: #99c793;
+  --yellow: #fac862;
+  --blue: #6699cb;
+  --magenta: #c593c4;
+  --cyan: #5fb3b2;
+  --white: #fafafa;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 4rem;
+  }
+}
+
+@font-face {
+  font-family: Konstant Grotesk;
+  src: url('fonts/KonstantGrotesk.otf');
+}
+@font-face {
+  font-family: Radio Grotesk;
+  src: url('fonts/RadioGrotesk.otf');
+}
+
 body {
   margin: 0;
-  padding: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--white);
+  color: var(--black);
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-a {
-  text-decoration: none;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
