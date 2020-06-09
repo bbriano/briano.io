@@ -4,64 +4,34 @@ import Div100vh from 'react-div-100vh';
 
 export default () => {
   return (
-    <App>
-      <Heading>
-        <b>briano</b>
-      </Heading>
-      <Links>
-        <Link href="https://github.com/bbriano" target="_blank">
-          <b>Github</b>
-        </Link>
-      </Links>
-    </App>
+    <Center>
+      <div>
+        Hi, I'm Briano. I'm a Computer Science student living in Melbourne. I
+        like to build web applications and other{' '}
+        <a href="https://github.com/bbriano" target="_blank">
+          random things
+        </a>
+        . At the moment, I'm thinking a lot about life (in particular{' '}
+        <a
+          href="https://notes.andymatuschak.org/Evergreen_notes"
+          target="_blank"
+        >
+          Evergreen notes
+        </a>
+        ). I'm working on something similar to Andy's{' '}
+        <a href="https://notes.andymatuschak.org/" target="_blank">
+          working notes
+        </a>{' '}
+        system.
+      </div>
+    </Center>
   );
 };
 
-const App = styled(Div100vh)`
-  margin: auto;
-  padding: 0 2em;
-  max-width: 1800px;
+const Center = styled(Div100vh)`
+  margin: 0 auto;
+  padding: 0 3em;
+  max-width: 960px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-
-const Heading = styled.span`
-  font-family: Konstant Grotesk;
-  font-size: 4em;
-  animation: fadeIn 1s;
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-`;
-
-const Links = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  animation: fromRight 1s 300ms forwards;
-  transform: translateX(60%);
-  @keyframes fromRight {
-    from {
-      transform: translateX(60%);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
-`;
-
-const Link = styled.a`
-  font-family: Radio Grotesk;
-  color: var(--red);
-  transition: color 150ms;
-  text-decoration: none;
-  :hover {
-    color: var(--magenta);
-    text-decoration: underline;
-  }
+  align-items: center;
 `;
