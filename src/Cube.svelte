@@ -49,7 +49,7 @@
 
 <style>
     .canvas {
-        width: 100%;
+        width: 14rem;
         height: 14rem;
     }
 </style>
