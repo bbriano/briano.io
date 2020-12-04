@@ -6,75 +6,57 @@
     <title>briano</title>
 </svelte:head>
 
-<center>
-    <Cube />
-</center>
+<div class="root">
+    <center>
+        <Cube />
+    </center>
 
-<center>
-    <pre>
-***************************************
+    <center class="title">
+        ******<br />
+        <a href="mailto:b@briano.io">mail:b@briano.io</a>
+        <a href="https://github.com/bbriano">github:bbriano</a><br />
+    </center>
 
-
-<span
-            style="color:white">briano's page</span>
-
-<a
-            href="mailto:b@briano.io">mail:b@briano.io</a>    <a
-            href="https://github.com/bbriano">github:bbriano</a>
-***************************************
-    </pre>
-</center>
-
-<pre class="links">
-<br />
-    <a
-        href="https://notes.briano.io/cv.html">CV</a>
-
-    <a
-        href="https://notes.briano.io">notes</a>
-
-    <a
-        href="https://publioofficial.com">Publio</a>
-
-    <a
-        href="https://typings.gg">typings.gg</a>
-
-    <a
-        href="https://briano1905.com/gmk-wob-hiragana/">GMK WoB Hiragana</a>
-
-    <a
-        href="https://vce-notes.netlify.app">vce notes</a>
-
-    <a
-        href="https://briano1905.com/vector-3d">Vector 3D</a>
-
-    <a
-        href="https://briano1905.com/internet-usage">Internet Usage</a>
-
-    <a
-        href="https://briano1905.com/gmk-phantom/">GMK Phantom</a>
-</pre>
+    <div class="links">
+        <a href="https://notes.briano.io/cv.html">CV</a>
+        <a href="https://notes.briano.io">notes</a>
+        <a href="https://publioofficial.com">Publio</a>
+        <a href="https://typings.gg">typings.gg</a>
+        <a href="https://briano1905.com/gmk-wob-hiragana/">GMK WoB Hiragana</a>
+        <a href="https://vce-notes.netlify.app">vce notes</a>
+        <a href="https://briano1905.com/vector-3d">Vector 3D</a>
+        <a href="https://briano1905.com/internet-usage">Internet Usage</a>
+        <a href="https://briano1905.com/gmk-phantom/">GMK Phantom</a>
+    </div>
+</div>
 
 <style>
-    pre {
-        font-size: 2rem;
+    .root {
+        font-family: monospace;
+        font-size: 1.6rem;
+        padding: 1rem;
     }
 
-    center {
+    .title {
         color: blueviolet;
+        margin: 1rem 0;
     }
-    center a {
+    .title a {
         color: blue;
     }
 
     .links {
         max-width: 60rem;
         margin: auto;
+        display: flex;
+        flex-direction: column;
     }
-    a {
+    .links a {
         color: limegreen;
         text-decoration: none;
+        margin: 0.4rem 0;
     }
+
     a:hover {
         color: goldenrod;
     }
