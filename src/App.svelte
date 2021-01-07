@@ -15,11 +15,11 @@
         ******<br />
         <a href="mailto:b@briano.io">mail:b@briano.io</a>
         <a href="https://github.com/bbriano">github:bbriano</a><br />
+        <a href="https://docs.briano.io/cv/cv.pdf">CV</a>
     </center>
 
     <div class="links">
-        <a href="https://notes.briano.io/cv.html">CV</a>
-        <a href="https://notes.briano.io">notes</a>
+        <a href="https://docs.briano.io">docs</a>
         <a href="https://publioofficial.com">Publio</a>
         <a href="https://typings.gg">typings.gg</a>
         <a href="https://briano1905.com/gmk-wob-hiragana/">GMK WoB Hiragana</a>
