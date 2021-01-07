@@ -58,6 +58,6 @@
     }
 
     a:hover {
-        color: goldenrod;
+        text-decoration: underline;
     }
 </style>
