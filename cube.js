@@ -18,9 +18,7 @@ function main() {
 
     function animate() {
         requestAnimationFrame(animate);
-
         rotateCubes(cubes);
-
         renderer.render(scene, camera);
     }
     animate();
