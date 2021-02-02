@@ -6,19 +6,16 @@ const camera = new THREE.PerspectiveCamera(
     1000
 );
 const renderer = new THREE.WebGLRenderer();
+const darkTheme = matchMedia("(prefers-color-scheme: dark)");
 
 window.onload = main;
-window.addEventListener("resize", onWindowResize, false);
-
 function main() {
     camera.position.set(0, 0, 100);
     camera.lookAt(0, 0, 0);
-
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
     const cubes = cubeGrid();
-
     function animate() {
         requestAnimationFrame(animate);
         rotateCubes(cubes);
@@ -76,8 +73,23 @@ function rotateCubes(cubes) {
     }
 }
 
+// Re-render canvas on window resize
+window.addEventListener("resize", onWindowResize, false);
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
 }
+
+// Update color scheme to match client system preference
+darkTheme.onchange = setColorMode;
+function setColorMode() {
+    if (darkTheme.matches) {
+        console.log("dark");
+        renderer.setClearColor(0x000000, 1);
+    } else {
+        console.log("light");
+        renderer.setClearColor(0xfafafa, 1);
+    }
+}
+setColorMode();
