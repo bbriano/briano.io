@@ -1,7 +1,12 @@
+@font-face {
+    font-family: jetbrains_mono;
+    src: url(JetBrainsMono-Regular.woff2);
+}
+
 body {
     background: black;
     color: white;
-    font-family: monospace;
+    font-family: jetbrains_mono;
     font-size: 1.6rem;
     margin: 0;
 }

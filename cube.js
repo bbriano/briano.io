@@ -7,6 +7,9 @@ const camera = new THREE.PerspectiveCamera(
 );
 const renderer = new THREE.WebGLRenderer();
 
+window.onload = main;
+window.addEventListener("resize", onWindowResize, false);
+
 function main() {
     camera.position.set(0, 0, 100);
     camera.lookAt(0, 0, 0);
@@ -24,7 +27,7 @@ function main() {
     animate();
 }
 
-function cubeGrid(N = 11, size = 2, spacing = 10) {
+function cubeGrid(N = 50, size = 2, spacing = 10) {
     cubes = [];
 
     const points = [
@@ -73,4 +76,8 @@ function rotateCubes(cubes) {
     }
 }
 
-window.onload = main;
+function onWindowResize() {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+}
