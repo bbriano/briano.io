@@ -24,21 +24,12 @@ body {
     margin: 1rem 2rem;
 }
 .title a {
-    color: blue;
+    color: blueviolet;
 }
 
-.links {
-    max-width: 60rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-.links a {
-    color: limegreen;
+a {
     text-decoration: none;
-    margin: 0.4rem 0;
 }
-
 a:hover {
     text-decoration: underline;
 }
