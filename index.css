@@ -22,12 +22,6 @@ body {
     color: white;
     padding: 1rem;
 }
-@media (prefers-color-scheme: light) {
-    .card {
-        background: #eeed;
-        color: black;
-    }
-}
 
 .title {
     text-align: center;
