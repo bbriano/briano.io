@@ -27,11 +27,9 @@ body {
     text-align: center;
     margin: 1rem 2rem;
 }
-.title a {
-    color: blueviolet;
-}
 
 a {
+    color: limegreen;
     text-decoration: none;
 }
 a:hover {

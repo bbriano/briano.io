@@ -52,7 +52,7 @@ function cubeGrid(N = 50, size = 2, spacing = 10) {
     });
 
     const geometry = new THREE.BufferGeometry().setFromPoints(points);
-    const material = new THREE.LineBasicMaterial({ color: 0x00ff00 });
+    const material = new THREE.LineBasicMaterial({ color: 0x6611ff });
     for (let i = 0; i < N; i++) {
         for (let j = 0; j < N; j++) {
             const cube = new THREE.Line(geometry, material);
