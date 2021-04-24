@@ -1,0 +1,52 @@
+@font-face {
+    font-family: jetbrains_mono;
+    src: url(JetBrainsMono-Regular.woff2);
+}
+
+body {
+    font-family: jetbrains_mono;
+    margin: 0;
+}
+
+header {
+    margin: 1rem auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+a {
+    color: limegreen;
+    text-decoration: none;
+}
+a:hover {
+    color: goldenrod;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.card {
+    background: #111d;
+    color: white;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0rem auto;
+}
+
+.row {
+    display: flex;
+}
+
+.row > * {
+    flex: 1 1 0;
+}
+
+.cube {
+    position: fixed;
+    z-index: -10;
+}

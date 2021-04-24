@@ -12,7 +12,7 @@ function main() {
     camera.position.set(0, 0, 100);
     camera.lookAt(0, 0, 0);
     renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    document.querySelector(".cube").appendChild(renderer.domElement);
 
     const cubes = cubeGrid();
     function animate() {
