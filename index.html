@@ -85,11 +85,13 @@
     <script src="three.js"></script>
     <script src="cube.js"></script>
     <script>
-        document.querySelectorAll("div[imgsrc]").forEach(imgCon => {
-            const img = document.createElement("img");
-            img.setAttribute("src", imgCon.getAttribute("imgsrc"));
-            imgCon.appendChild(img);
-        })
+        setTimeout(() => {
+            document.querySelectorAll("div[imgsrc]").forEach(imgCon => {
+                const img = document.createElement("img");
+                img.setAttribute("src", imgCon.getAttribute("imgsrc"));
+                imgCon.appendChild(img);
+            })
+        }, 50);
     </script>
 </body>
 </html>
