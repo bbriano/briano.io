@@ -7,8 +7,9 @@ const camera = new THREE.PerspectiveCamera(
 );
 const renderer = new THREE.WebGLRenderer();
 
-window.onload = main;
-function main() {
+cube();
+
+function cube() {
     camera.position.set(0, 0, 100);
     camera.lookAt(0, 0, 0);
     renderer.setSize(window.innerWidth, window.innerHeight);

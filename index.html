@@ -82,16 +82,14 @@
             </ul>
         </div>
     </div>
-    <script src="three.js"></script>
+    <script src="three.min.js"></script>
     <script src="cube.js"></script>
     <script>
-        setTimeout(() => {
-            document.querySelectorAll("div[imgsrc]").forEach(imgCon => {
-                const img = document.createElement("img");
-                img.setAttribute("src", imgCon.getAttribute("imgsrc"));
-                imgCon.appendChild(img);
-            })
-        }, 1000);
+        document.querySelectorAll("div[imgsrc]").forEach(imgCon => {
+            const img = document.createElement("img");
+            img.setAttribute("src", imgCon.getAttribute("imgsrc"));
+            imgCon.appendChild(img);
+        })
     </script>
 </body>
 </html>
