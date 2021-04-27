@@ -6,6 +6,7 @@
 body {
     font-family: jetbrains_mono;
     margin: 0;
+    background-color: black;
 }
 
 header {
