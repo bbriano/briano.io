@@ -1,0 +1,20 @@
+body {
+	background-color: #FFFFEA;
+	margin: 0;
+}
+
+nav {
+	background-color: #EAFFFF;
+}
+
+nav h1 {
+	margin: 0;
+}
+
+nav, section {
+	padding: 1rem;
+}
+
+section {
+	max-width: 600px;
+}
