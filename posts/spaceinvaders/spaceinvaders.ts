@@ -1,6 +1,6 @@
-// FIT2102 Assignment 1: Space Invaders
+// Space Invaders
 //
-// author:      Briano Goestiawan (31482228)
+// author:      Briano Goestiawan <b@briano.io>
 // date:        01 Sep 2021
 
 import { fromEvent, merge } from "rxjs"
