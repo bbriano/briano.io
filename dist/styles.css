@@ -19,3 +19,7 @@ nav a, .post a {
 nav span {
 	float: right;
 }
+
+pre {
+	margin-left: 2rem;
+}
