@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<link rel="stylesheet" href="/styles.css">
+<title>BRIANO.IO</title>
+<nav>
+<section>
+<a href="/">BRIANO.IO</a>
+<span>Posted on: 24 Sep 2021</span>
+</section>
+</nav>
+<main>
+<section>
+<h1 id="code-quality">Code quality</h1>
+<pre><code># THE DEFINITIVE CODE QUALITY CHECKER
+# NOTE: replace /^C  / and &#39;\.c&#39; with whatever language
+loc=$(cloc --output-type sloccount . | awk &#39;/^C  / {print $5}&#39;)
+ifs=$(cat $(find . -type f | grep &#39;\.c&#39;) | grep -c &#39;if&#39;)
+
+score=$(expr $loc / $ifs)
+printf &#39;score=%s &#39; $score
+
+case $score in
+    0|1|2)
+        echo put in bin
+        ;;
+    3|4)
+        echo needs improvement
+        ;;
+    5|6)
+        echo average
+        ;;
+    7|8|9)
+        echo good
+        ;;
+    *)
+        echo great
+        ;;
+esac</code></pre>
+</section>
+</main>

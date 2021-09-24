@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+	background-color: #FFFFEA;
+}
+
+section {
+	max-width: 600px;
+	padding: 0.2rem 1rem;
+}
+
+nav {
+	background-color: #EAFFFF;
+}
+
+nav a {
+	color: black;
+	text-decoration: none;
+}
+
+nav span {
+	float: right;
+}
