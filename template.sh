@@ -4,10 +4,10 @@
 echo '<!doctype html>
 <html lang="en">
 <link rel="stylesheet" href="/styles.css">
-<title>BRIANO.IO</title>
+<title>briano.io</title>
 <nav>
 <section>
-<a href="/">BRIANO.IO</a>
+<a href="/">briano.io</a>
 <span>'"$1"'</span>
 </section>
 </nav>
