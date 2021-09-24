@@ -14,7 +14,7 @@ for post in posts/*; do p=$(echo $post |sed 's/^[^\/]*\///')
 	body=$(cat dist/$p/body.html)
 	rm dist/$p/body.html
 
-	index=$index'<h3><a href="'$p'">'$title'</a></h3>'
+	index=$index'<h3 class="post"><a href="'$p'">'$title'</a></h3>'
 	template.sh "Posted on: $date" "$body" >dist/$p/index.html
 
 	echo Ok
