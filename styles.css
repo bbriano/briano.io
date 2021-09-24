@@ -1,20 +1,22 @@
 body {
-	background-color: #FFFFEA;
 	margin: 0;
+	background-color: #FFFFEA;
+}
+
+section {
+	max-width: 600px;
+	padding: 0.2rem 1rem;
 }
 
 nav {
 	background-color: #EAFFFF;
 }
 
-nav h1 {
-	margin: 0;
+nav a {
+	color: black;
+	text-decoration: none;
 }
 
-nav, section {
-	padding: 0.4rem 1rem;
-}
-
-section {
-	max-width: 600px;
+nav span {
+	float: right;
 }
